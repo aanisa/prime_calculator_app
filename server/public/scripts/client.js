@@ -1,37 +1,46 @@
-var inputs = {};
+var inputObj = {};
 
 $(document).ready(function() {
 
     $('#addButton').on('click', function() {
         var val1 = $('#val1').val();
         var val2 = $('#val2').val();
-        var type = 'addition';
-        console.log('adding...' + val1 + val2 + type);
+        var type = 'Add';
+
+        var inputs = {x: val1, y: val2, type: type};
+        console.log(inputs);
     });
 
     $('#subtractButton').on('click', function() {
         var val1 = $('#val1').val();
         var val2 = $('#val2').val();
-        var type = 'subtraction';
-        console.log('subtracting...');
+        var type = 'Subtract';
+
+        var inputs = {x: val1, y: val2, type: type};
+        console.log(inputs);
     });
 
     $('#multiplyButton').on('click', function() {
         var val1 = $('#val1').val();
         var val2 = $('#val2').val();
-        var type = 'multiplication';
-        console.log('multiplying...');
+        var type = 'Multiply';
+
+        var inputs = {x: val1, y: val2, type: type};
+        console.log(inputs);
     });
 
     $('#divideButton').on('click', function() {
         var val1 = $('#val1').val();
         var val2 = $('#val2').val();
-        var type = 'division';
-        console.log('dividing...');
+        var type = 'Divide';
+
+        var inputs = {x: val1, y: val2, type: type};
+        console.log(inputs);
     });
 
     $('#clearAll').on('click', function() {
         $('#resultDiv').empty();
+        $('.val').empty();
         console.log('DOM CLEARED!');
     });
 
