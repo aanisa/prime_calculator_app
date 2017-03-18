@@ -24,7 +24,7 @@ var bodyParser = require('body-parser');
 app.use(express.static('server/public'));
 
 //get values from inputs and type of operation from client
-app.get('/data/:x/:y/:type', function(req, res) {
+app.get('/add/:x/:y/:type', function(req, res) {
   console.log(req.params);
   var math = parseInt(req.params.x) + parseInt(req.params.y); //converts string to number
   console.log(math);

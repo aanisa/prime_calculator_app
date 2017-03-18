@@ -10,7 +10,7 @@ $(document).ready(function() {
         // console.log(inputs);
     $.ajax({
       type: 'GET',
-      url: '/data/' + val1 + '/' + val2 + '/' + type,
+      url: '/add/' + val1 + '/' + val2 + '/' + type,
       success: function (response) {
           console.log(response);
       }
