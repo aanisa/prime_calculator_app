@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     $('#clearAll').on('click', function() {
         $('#resultDiv').empty();
-        $('.val').empty();
+        
         console.log('DOM CLEARED!');
     });
 
