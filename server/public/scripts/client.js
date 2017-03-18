@@ -6,47 +6,66 @@ $(document).ready(function() {
         var val1 = $('#val1').val();
         var val2 = $('#val2').val();
         var type = 'Add';
-        // var inputs = {x: val1, y: val2, type: type};
-        // console.log(inputs);
-    $.ajax({
-      type: 'GET',
-      url: '/add/' + val1 + '/' + val2 + '/' + type,
-      success: function (response) {
-          console.log(response);
-          $('.resultDiv').append('<p>'+response+'</p>');
-      }
+    //AJAX request to server & append response to DOM
+        $.ajax({
+            type: 'GET',
+            url: '/add/' + val1 + '/' + val2 + '/' + type,
+            success: function(response) {
+                console.log(response);
+                $('.resultDiv').append('<p>' + response + '</p>');
+            }
+        });
     });
-    });
+
 
     $('#subtractButton').on('click', function() {
         var val1 = $('#val1').val();
         var val2 = $('#val2').val();
         var type = 'Subtract';
-
-        var inputs = {x: val1, y: val2, type: type};
-        console.log(inputs);
+    //AJAX request to server & append response to DOM
+        $.ajax({
+            type: 'GET',
+            url: '/subtract/' + val1 + '/' + val2 + '/' + type,
+            success: function(response) {
+                console.log(response);
+                $('.resultDiv').append('<p>' + response + '</p>');
+            }
+        });
     });
 
     $('#multiplyButton').on('click', function() {
         var val1 = $('#val1').val();
         var val2 = $('#val2').val();
         var type = 'Multiply';
+    //AJAX request to server & append response to DOM
+        $.ajax({
+            type: 'GET',
+            url: '/multiply/' + val1 + '/' + val2 + '/' + type,
+            success: function(response) {
+                console.log(response);
+                $('.resultDiv').append('<p>' + response + '</p>');
+            }
+        });
 
-        var inputs = {x: val1, y: val2, type: type};
-        console.log(inputs);
     });
 
     $('#divideButton').on('click', function() {
         var val1 = $('#val1').val();
         var val2 = $('#val2').val();
         var type = 'Divide';
-
-        var inputs = {x: val1, y: val2, type: type};
-        console.log(inputs);
+    //AJAX request to server & append response to DOM
+        $.ajax({
+            type: 'GET',
+            url: '/divide/' + val1 + '/' + val2 + '/' + type,
+            success: function(response) {
+                console.log(response);
+                $('.resultDiv').append('<p>' + response + '</p>');
+            }
+        });
     });
 
 
-//clear all - reset
+    //clear all - reset
     $('#clearAll').on('click', function() {
         $('.resultDiv').empty();
 
