@@ -13,6 +13,7 @@ $(document).ready(function() {
       url: '/add/' + val1 + '/' + val2 + '/' + type,
       success: function (response) {
           console.log(response);
+          $('.resultDiv').append('<p>'+response+'</p>');
       }
     });
     });
@@ -47,7 +48,7 @@ $(document).ready(function() {
 
 //clear all - reset
     $('#clearAll').on('click', function() {
-        $('#resultDiv').empty();
+        $('.resultDiv').empty();
 
         console.log('DOM CLEARED!');
     });
