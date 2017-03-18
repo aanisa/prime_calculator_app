@@ -18,13 +18,27 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var port = 7000;
+var bodyParser = require('body-parser');
 
 
 app.use(express.static('server/public'));
 
+//get values from inputs and type of operation from client
+app.get('/data/:val1/:val2/:type', function(req, res) {
+  console.log('got it!');
+res.send('all good');
+});
+
+
+
+
 app.get('/', function(req, res) {
   res.sendFile(path.resolve('server/public/views/index.html'));
 });
+
+
+
+
 
 app.listen(port, function(req, res) {
   console.log('listening on', port);
