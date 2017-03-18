@@ -6,9 +6,15 @@ $(document).ready(function() {
         var val1 = $('#val1').val();
         var val2 = $('#val2').val();
         var type = 'Add';
-
-        var inputs = {x: val1, y: val2, type: type};
-        console.log(inputs);
+        // var inputs = {x: val1, y: val2, type: type};
+        // console.log(inputs);
+    $.ajax({
+      type: 'GET',
+      url: '/data/' + val1 + '/' + val2 + '/' + type,
+      success: function (response) {
+          console.log(response);
+      }
+    });
     });
 
     $('#subtractButton').on('click', function() {
@@ -38,9 +44,11 @@ $(document).ready(function() {
         console.log(inputs);
     });
 
+
+//clear all - reset
     $('#clearAll').on('click', function() {
         $('#resultDiv').empty();
-        
+
         console.log('DOM CLEARED!');
     });
 
