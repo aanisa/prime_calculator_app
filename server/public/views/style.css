@@ -1,0 +1,108 @@
+.calc {
+  width:260px;
+  height: 25px;
+  background-color: azure;
+  font-size: 30px;
+  text-align: right;
+}
+
+/*Can use button tag to edit size of buttons later*/
+
+#divideButton {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+#multiplyButton {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+#subtractButton {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+#addButton {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+#clearAll {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.equals {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num0 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num1 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num2 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num3 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num4 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num5 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num6 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num7 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num8 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.num9 {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
+
+.divide {
+  background-color: floralwhite;
+  font-size: 35px;
+  margin: 2px;
+}
