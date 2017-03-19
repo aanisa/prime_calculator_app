@@ -1,13 +1,13 @@
-.calc {
+/*.calc {
   width:260px;
   height: 25px;
   background-color: azure;
   font-size: 30px;
   text-align: right;
-}
+}*/
 
 /*Can use button tag to edit size of buttons later*/
-
+/*
 #divideButton {
   background-color: floralwhite;
   font-size: 35px;
@@ -99,10 +99,4 @@
   background-color: floralwhite;
   font-size: 35px;
   margin: 2px;
-}
-
-.divide {
-  background-color: floralwhite;
-  font-size: 35px;
-  margin: 2px;
-}
+}*/
