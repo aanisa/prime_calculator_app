@@ -68,7 +68,8 @@ $(document).ready(function() {
     //clear all - reset
     $('#clearAll').on('click', function() {
         $('.resultDiv').empty();
-
+        $( '#val1' ).val('');
+        $('#val2').val('');
         console.log('DOM CLEARED!');
     });
 
