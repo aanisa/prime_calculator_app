@@ -1,9 +1,9 @@
-var inputObj = {};
+
 
 $(document).ready(function() {
 
     $('#addButton').on('click', function() {
-        var val1 = $('#val1').val();
+        var val1 = $('#val1').val();        
         var val2 = $('#val2').val();
         var type = 'Add';
     //AJAX request to server & append response to DOM
@@ -70,7 +70,7 @@ $(document).ready(function() {
         $('.resultDiv').empty();
         $( '#val1' ).val('');
         $('#val2').val('');
-        console.log('DOM CLEARED!');
+        console.log('CLEAR!');
     });
 
 
