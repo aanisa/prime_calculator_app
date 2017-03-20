@@ -65,13 +65,23 @@ $(document).ready(function() {
     });
 
 
-    //clear all - reset
+    //clear all  - reset text input
     $('#clearAll').on('click', function() {
         $('.resultDiv').empty();
         $( '#val1' ).val('');
         $('#val2').val('');
         console.log('DOM CLEARED!');
     });
+
+
+//PRO MODE
+// $('.num7').on('click', function() {
+//   console.log('7');
+//   // $('.answer').empty();
+//   $('.answer').append('<span>7</span>');
+
+// });
+// var num1 = document.getElementById("#num1").value;
 
 
 }); //end of doc.ready
